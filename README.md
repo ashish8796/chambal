@@ -7,12 +7,9 @@ git push origin branch_name:gh-demo -f
 Changes
 
 Your changes will be reflected on:
+[https://ashish8796.github.io/chambal/]("https://ashish8796.github.io/chambal/")
 
-```js
-https://ashish8796.github.io/chambal/
-```
-
-PR names:
+Branch names:
 
 - for feature => `your_name/feature/feature_name`
 - for bug => `your_name/bug/bug_name`
