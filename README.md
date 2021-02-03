@@ -6,8 +6,7 @@ git push origin branch_name:gh-demo -f
 
 Changes
 
-Your changes will be reflected on:
-["https://ashish8796.github.io/chambal/"]("https://ashish8796.github.io/chambal/")
+Your changes will be reflected on: https://ashish8796.github.io/chambal/
 
 Branch names:
 
