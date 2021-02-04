@@ -29,6 +29,7 @@
   width: 180px;
   padding: 16px 0 20px;
   flex-grow: 1;
+  position: relative;
 }
 
 .feature p {
@@ -75,4 +76,17 @@
 
 .img-container button {
   padding: 15px 23px;
+}
+
+#seo,
+#content-marketing,
+#market-research,
+#advertising,
+#social-media {
+  width: 100%;
+  border: 1px solid red;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }

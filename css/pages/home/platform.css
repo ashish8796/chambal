@@ -10,6 +10,7 @@
   text-align: center;
   font-weight: 600;
   line-height: 70px;
+  position: relative;
 }
 
 h1 {
@@ -71,6 +72,10 @@ h1 + p {
   flex-basis: 80px;
 }
 
+#country-select-btn:hover {
+  cursor: pointer;
+}
+
 #country-select-btn .arrow {
   border: 3px solid gray;
   border-top: white;
@@ -91,4 +96,36 @@ h1 + p {
 .brands-svg-wrapper {
   justify-content: space-evenly;
   width: 80vw;
+}
+
+.all-contries-cont {
+  border: 1px solid white;
+  width: 250px;
+  overflow-y: scroll;
+  position: absolute;
+  z-index: 100;
+  left: 45%;
+  background-color: white;
+  color: black;
+  top: 65vh;
+  border-radius: 4px;
+  right: 0;
+  height: 300px;
+  visibility: hidden;
+}
+
+.all-contries-cont div {
+  border-bottom: 1px solid gray;
+  height: fit-content;
+  line-height: 30px;
+}
+
+.all-contries-cont div:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.all-contries-cont > div > p {
+  margin: 0;
+  padding: 0;
 }
