@@ -1,0 +1,80 @@
+.award-section {
+  margin: 25vh auto;
+  width: 80vw;
+}
+
+.award-section h2 {
+  margin-bottom: 30px;
+}
+
+.award-section h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.award-section p {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.semursh-view {
+  width: 70vw;
+  margin-left: 40px;
+  border-radius: 20px;
+  padding: 50px 0 50px 70px;
+  font-family: "Factor A", sans-serif;
+  background-color: #b8f5d6;
+}
+
+.semursh-view h2 {
+  padding: 0;
+  width: 75%;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.semursh-view div {
+  width: 70%;
+  line-height: 28px;
+  padding: 30px 0 20px;
+}
+
+.semursh-view div > p:first-child {
+  margin-right: 20px;
+}
+
+.ceo-wrapper {
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: "Factor A", sans-serif;
+}
+
+.ceo-wrapper > div:last-child {
+  padding-left: 50px;
+}
+
+.ceo-wrapper h3 {
+  font-size: 40px;
+  margin: 4em 0 0.5em;
+  font-weight: bold;
+}
+
+.ceo-wrapper p {
+  margin-bottom: 40px;
+}
+
+.ceo-wrapper ul {
+  padding-left: 40px;
+  line-height: 30px;
+  width: 70%;
+}
+
+.ceo-wrapper li {
+  list-style: disc;
+  font-size: 19px;
+}
+
+.ceo-wrapper button {
+  padding: 15px 50px;
+  margin-top: 40px;
+}
