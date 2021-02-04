@@ -1,6 +1,12 @@
 /* reset */
+<<<<<<< HEAD
 @import "./pages/feature.css";
 
 body {
   color: b;
 }
+=======
+
+@import "./pages/reset.css";
+
+>>>>>>> 45955ae6c49657296e7012bfd7d251ecc49b50b1
