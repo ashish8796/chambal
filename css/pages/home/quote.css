@@ -1,0 +1,35 @@
+.quote-cont,
+.award-section {
+  margin: 50vh auto 20vh;
+  width: 70vw;
+  text-align: center;
+  font-family: "Factor A", sans-serif;
+}
+
+.quote-cont h2,
+.award-section h2,
+.semursh-view h2 {
+  font-size: 40px;
+  padding: 0 10%;
+
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.quote-cont > div {
+  margin-top: 40px;
+}
+
+.quote-cont > div > h4 {
+  font-weight: bold;
+  margin: 15px 0 20px;
+}
+
+.quote-cont > div > h4 + p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quote-cont > div > p:last-child {
+  color: gray;
+}
