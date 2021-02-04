@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+/* reset */
+
+@import "./pages/reset.css";
+
+=======
 @import "./reset.css";
 @import "./font.css";
 @import "./pages/home.css";
@@ -48,3 +54,4 @@
 body {
   color: b;
 } */
+>>>>>>> 7c3667209ec869858aa36a3792d318689b605cc2
