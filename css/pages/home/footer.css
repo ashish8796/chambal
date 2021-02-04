@@ -1,0 +1,122 @@
+footer {
+  color: white;
+  padding: 50px 8vw 0;
+  font-family: "Factor A", sans-serif;
+  flex-direction: column;
+  font-size: 14px;
+  position: relative;
+}
+
+.contact-details {
+  justify-content: space-between;
+  text-align: center;
+}
+
+#footer-select-country {
+  border: 1px solid white;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  height: fit-content;
+  padding: 12px 20px;
+  justify-content: space-evenly;
+  flex-basis: 12vw;
+}
+
+#footer-select-country > div {
+  justify-content: space-between;
+}
+
+#footer-select-country .arrow {
+  border: 2px solid white;
+  border-top: 1px solid #111317;
+  border-left: 1px solid #111317;
+}
+
+.contact-details > div:nth-child(2) p {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.network-status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(9, 102, 9);
+  display: inline-block;
+}
+
+.contact-details > p {
+  color: gray;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.contact-details button {
+  background-color: rgb(0, 188, 152);
+  padding: 11px 0;
+  border-radius: 3px;
+  width: 26vw;
+}
+
+.contact-details button + a {
+  display: block;
+  text-decoration: underline;
+  color: gray;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.address {
+  border: 2px solid gray;
+  padding: 18px 0;
+  border-radius: 6px;
+}
+
+.address > p {
+  margin: 0 20px;
+  color: rgb(111, 119, 124);
+}
+
+.footer-feature {
+  justify-content: space-between;
+  padding-bottom: 30vh;
+}
+
+.footer-feature > div,
+#community-footer {
+  flex-direction: column;
+}
+
+.footer-feature p {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.footer-feature a {
+  text-decoration: none;
+  margin: 4px 0;
+  color: rgb(137, 141, 154);
+}
+
+.footer-feature a:hover {
+  cursor: pointer;
+}
+
+footer > article:last-child {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+footer img {
+  margin-left: 6vw;
+}
+
+footer img + p {
+  margin-left: 3vw;
+  color: rgb(137, 141, 154);
+}

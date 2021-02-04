@@ -4,8 +4,923 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    Home
+    <main>
+      <!-- Header Related Mark Up -->
+      <header class="background-black">
+        <nav class="flex">
+          <section class="left-navigation flex align-items-center">
+            <a href="#" target="_blank" class="flex">
+              <img src="./assets/svgs/svgexport-48.svg" alt="company logo" />
+            </a>
+            <a href="#" target="_blank">Features</a>
+            <a href="#" target="_blank">Pricing</a>
+            <div class="flex">
+              Resources
+              <div class="arrow"></div>
+            </div>
+            <div class="flex">
+              Company
+              <div class="arrow"></div>
+            </div>
+
+            <div class="flex">
+              Extra Tools
+              <div class="arrow"></div>
+            </div>
+          </section>
+
+          <section class="option-box display-none">
+            <article id="resources-box" class="display-none">
+              <a href="#"
+                ><h4>Blog</h4>
+                <div>
+                  Read the industry's latest thoughts on digital marketing,
+                  content strategy, SEO, PPC, social media and more.
+                </div></a
+              >
+
+              <a href="#"
+                ><h4>Help Center</h4>
+                <div>
+                  Learn how to use SEMrush with user manuals, how-to’s, videos
+                  and more!
+                </div>
+              </a>
+
+              <a href="#"
+                ><h4>What's New</h4>
+                <div>
+                  Keep track of the newest SEMrush features and improvements.
+                </div></a
+              >
+
+              <a href="#">
+                <h4>Webinars</h4>
+                <div>
+                  Register and take part in educational webinars conducted by
+                  the best digital marketing experts.
+                </div>
+              </a>
+
+              <a href="#">
+                <h4>Ebooks</h4>
+                <div>
+                  A range of downloadable guides in PDF format that can help you
+                  broaden your knowledge and improve your skills.
+                </div>
+              </a>
+
+              <a href="#"
+                ><h4>Podcast</h4>
+                <div>
+                  Your weekly source of case-based stories about marketing
+                  growth from local businesses to global brands.
+                </div></a
+              >
+
+              <a href="#">
+                <h4>Academy</h4>
+                <div>
+                  Get vital SEO skills, learn how to use our toolkits and get
+                  official certificates of your proficiency in SEO and SEMrush.
+                </div>
+              </a>
+            </article>
+
+            <div class="comapany-box display-none">
+              <div>
+                <a href="https://www.semrush.com/company/">About Us</a>
+                <a href="https://www.semrush.com/company/careers/">Careers</a>
+                <a href="https://www.semrush.com/company/stories/"
+                  >Success Stories</a
+                >
+                <a href="https://www.semrush.com/company/trusted-data-provider/"
+                  >Data Studies</a
+                >
+                <a
+                  href="https://www.shareasale.com/shareasale.cfm?merchantID=97231&source=semrushh"
+                  >Affiliate Program</a
+                >
+                <a href="https://www.semrush.com/company/contacts/">Contacts</a>
+                <a href="https://www.semrush.com/stats/">Stats and Facts</a>
+              </div>
+            </div>
+
+            <div class="extra-tools-box display-none">
+              <p>Extra tools</p>
+              <a
+                href="https://www.semrush.com/comapny/marketplace/offers/article"
+                >MarketPlace</a
+              >
+              <a href="https://www.semrush.com/comapny/impacthero/"
+                >ImpactHero</a
+              >
+              <a href="https://www.semrush.com/comapny/agencies/"
+                >Agency Partners</a
+              >
+              <a
+                href="https://www.sellerly.com/?utm_source=semrush&utm_medium=extratools"
+                >Amazon tools</a
+              >
+              <a
+                href="https://prowly.com/?utm_source=semrush&utm_medium=extratools"
+                >Prowly</a
+              >
+            </div>
+          </section>
+
+          <section class="right-navigation flex align-items-center">
+            <div class="flex">
+              EN
+              <div class="arrow"></div>
+            </div>
+
+            <a id="log-in-btn" href="#" class="button-essential">Log In</a>
+            <a id="sign-up" href="#" class="button-essential">Sign Up</a>
+          </section>
+        </nav>
+      </header>
+
+      <!-- All Platform Container Related MarkUp -->
+
+      <section class="platform">
+        <h1>
+          <span>One platform.</span> Everything you need to dominate your niche
+          online.
+        </h1>
+        <p>
+          Do SEO, content marketing, competitor research,<br />
+          PPC and social media marketing from just one platform.
+        </p>
+
+        <article class="find-country-box flex">
+          <div class="search-wrapper flex flex-grow">
+            <input
+              type="text"
+              id="search-country"
+              class="button-essential backgroun-white flex-grow"
+              placeholder="Enter domain, keyword or URL"
+            />
+            <div
+              id="country-select-btn"
+              class="flex align-items-center justify-content-center"
+            >
+              <p>US</p>
+              <div class="arrow"></div>
+            </div>
+          </div>
+
+          <button id="submit-btn" class="button-essential">Start now</button>
+        </article>
+
+        <h5>Trusted by the world’s leading brands</h5>
+
+        <div class="brands-svg-wrapper flex">
+          <img
+            src="https://cdn.semrush.com/static/index/logos/Decathlon_logo.867c20390207.svg"
+            alt="Decathlon Logo"
+          />
+          <img
+            src="https://cdn.semrush.com/static/index/logos/Tesla_logo.f58ace4c9fc6.svg"
+            alt="Tesla Logo"
+          />
+          <img
+            src="https://cdn.semrush.com/static/index/logos/Nike_logo.5b1a61b281c0.svg"
+            alt="Nike Logo"
+          />
+          <img
+            src="https://cdn.semrush.com/static/index/logos/Walmart_logo.d5049ba21457.svg"
+            alt="Walmart Logo"
+          />
+          <img
+            src="./assets/brand-images/P&G_logo.310c6107f51e.svg"
+            alt="P&G Logo"
+          />
+
+          <img
+            src="./assets/brand-images/Forbes_logo.d98a659660b4.svg"
+            alt="Forbes Logo"
+          />
+          <img
+            src="https://cdn.semrush.com/static/index/logos/IBM_logo.58ad03d7784d.svg"
+            alt="IBM_logo Logo"
+          />
+        </div>
+      </section>
+
+      <!-- Feature Related Mark Up -->
+
+      <section class="features-home-box">
+        <h2 class="features-heading">See what's inside</h2>
+
+        <div class="features-container background-white">
+          <article class="flex">
+            <div class="feature">
+              <img
+                src="./assets/svgs/svgexport-11.svg"
+                alt="seo img"
+                class="disablep-img"
+              />
+              <img
+                src="./assets/features-home-svgs/sec-abled.png"
+                alt=""
+                class="abled-img"
+              />
+              <div id="seo"></div>
+              <p>SEO</p>
+            </div>
+
+            <div class="feature">
+              <img
+                src="./assets/svgs/svgexport-12.svg"
+                alt="seo img"
+                class="disablep-img"
+              />
+              <img
+                src="./assets/features-home-svgs/content-marketing-abled.png"
+                alt=""
+                class="abled-img"
+              />
+              <div id="content-marketing"></div>
+              <p>CONTENT MARKETING</p>
+            </div>
+
+            <div class="feature">
+              <img
+                src="./assets/svgs/svgexport-13.svg"
+                alt="seo img"
+                class="disablep-img"
+              />
+              <img
+                src="./assets/features-home-svgs/market-research-abled.png"
+                alt=""
+                class="abled-img"
+              />
+              <div id="market-research"></div>
+              <p>MARKET RESEARCH</p>
+            </div>
+
+            <div class="feature">
+              <img
+                src="./assets/svgs/svgexport-14.svg"
+                alt="seo img"
+                class="disablep-img"
+              />
+              <img
+                src="./assets/features-home-svgs/advertising-abled.png"
+                alt=""
+                class="abled-img"
+              />
+              <div id="advertising"></div>
+              <p>ADVERTISING</p>
+            </div>
+
+            <div class="feature">
+              <img
+                src="./assets/svgs/svgexport-15.svg"
+                alt="seo img"
+                class="disablep-img"
+              />
+              <img
+                src="./assets/features-home-svgs/social-media-abled.png"
+                alt=""
+                class="abled-img"
+              />
+              <div id="social-media"></div>
+              <p>SOCIAL MEDIA</p>
+            </div>
+          </article>
+
+          <article class="img-container flex" id="seo-info">
+            <section>
+              <h3>
+                Grow organic traﬃc with our complete and easy SEO tools &amp;
+                workﬂow
+              </h3>
+
+              <ul>
+                <li>Uncover millions of national &amp; local keywords</li>
+                <li>Analyze any domain’s backlink profile</li>
+                <li>Run technical SEO audits</li>
+                <li>Track your SERP positions daily</li>
+              </ul>
+
+              <button class="button-essential">Try SEO Toolkit</button>
+            </section>
+
+            <section>
+              <img
+                src="https://cdn.semrush.com/static/index/tools-new/seo.9edeeb0311e7.svg"
+                alt="seo img"
+              />
+            </section>
+          </article>
+
+          <article id="content-marketing-info" class="display-none">
+            <section>
+              <img
+                src="https://cdn.semrush.com/static/index/tools-new/content_marketing.9ad3130035b8.svg"
+                alt="content marketing img"
+              />
+            </section>
+
+            <section>
+              <h3>Create content that ranks (no expert knowledge required)</h3>
+
+              <ul>
+                <li>Find topics that resonate with your audience</li>
+                <li>Get actionable tips to create SEO-friendly content</li>
+                <li>
+                  Audit and improve your content based on real-time metrics
+                </li>
+                <li>Track brand mentions and content reach</li>
+              </ul>
+
+              <button>Try Content Marketing Toolkit</button>
+            </section>
+          </article>
+
+          <article id="market-research-info" class="display-none">
+            <section>
+              <img
+                src="https://cdn.semrush.com/static/index/tools-new/competitive_research.122052b6bfb5.svg"
+                alt="market research img"
+              />
+            </section>
+
+            <section>
+              <h3>Unveil your competitors’ marketing strategy and tactics</h3>
+
+              <ul>
+                <li>Analyze traffic of any website</li>
+                <li>Unveil competitor promotion strategies</li>
+                <li>Get ideas for growing your market share</li>
+                <li>Discover keyword & backlink gap</li>
+              </ul>
+
+              <button>
+                <span class="index-button__text">
+                  Try Competitive Research Toolkit
+                </span>
+              </button>
+            </section>
+          </article>
+
+          <article id="advertising-info" class="display-none">
+            <section>
+              <img
+                src="https://cdn.semrush.com/static/index/tools-new/ppc.fedd11a67df9.svg"
+                alt="advertising img"
+              />
+            </section>
+
+            <section>
+              <h3>Discover how to reach more prospects while spending less</h3>
+
+              <ul>
+                <li>Find the best keywords for every PPC campaign</li>
+                <li>Monitor your competitor’s ad copies and landing pages</li>
+                <li>Optimize your Advertising spend (at a local level)</li>
+                <li>Analyze Google Shopping ad campaigns</li>
+              </ul>
+
+              <button>
+                <span class="index-button__text">
+                  Try Competitive Research Toolkit
+                </span>
+              </button>
+            </section>
+          </article>
+
+          <article id="social-media-info" class="display-none">
+            <section>
+              <img
+                src="https://cdn.semrush.com/static/index/tools-new/social_media.044a788fef8f.svg"
+                alt="social media img"
+              />
+            </section>
+            <section>
+              <h3>Build your most effective social media strategy</h3>
+
+              <ul>
+                <li>Schedule and post content on social media</li>
+                <li>Analyze the performance of your posts</li>
+                <li>Track & analyze competitor accounts</li>
+                <li>Create & optimize social ads</li>
+              </ul>
+
+              <button>
+                <span class="index-button__text">
+                  Try Social Media Toolkit
+                </span>
+              </button>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <!--Quote Related Mark Up  -->
+
+      <section class="quote-cont">
+        <h2>
+          “Semrush is like a keyword research tool, Google Trends, Moz,
+          Hootsuite and SimilarWeb in one.”
+        </h2>
+
+        <div>
+          <img
+            src="./assets/ceo-imgae/Mario_Leon_Rojas.6062ad72d0c3.webp"
+            alt="Performance Marketing Specialist"
+          />
+
+          <h4>Mario León Rojas</h4>
+          <p>Performance Marketing Specialist, Banco del Sol</p>
+          <p>Source: Semrush G2 reviews</p>
+        </div>
+      </section>
+
+      <!-- Award Related Mark Up -->
+
+      <section class="award-section">
+        <h2>Award-winning tools trusted by the world’s leading companies</h2>
+
+        <div class="flex">
+          <div class="flex-grow">
+            <img
+              src="./assets/award-image/marketing-professinals.png"
+              alt="marketing professionals"
+            />
+
+            <h3>marketing professionals</h3>
+            <p>have already used Semrush</p>
+          </div>
+
+          <div class="flex-grow">
+            <img
+              src="./assets/award-image/international-awards.png"
+              alt="international awards"
+            />
+
+            <h3>international awards</h3>
+            <p>as best SEO software suite</p>
+          </div>
+
+          <div class="flex-grow">
+            <img
+              src="./assets/award-image/marketing-professinals.png"
+              alt="Fortune 500"
+            />
+
+            <h3>Fortune 500 <span>companies</span></h3>
+            <p>use Semrush as their go-to marketing tool</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Semursh View Related Mark Up -->
+
+      <section class="semursh-view">
+        <h2>
+          Data is good. Strategy is better. <br />
+          Semrush gives you both.
+        </h2>
+
+        <div class="flex">
+          <p>
+            Semrush knows a lot about your market and website. It gives you
+            access to the world’s largest database of 20 billion keywords, 310
+            million ads and 17 billion URLs crawled per day.
+          </p>
+
+          <p>
+            But you get more than just numbers. Semrush analyzes the data for
+            you and gives you instant recommendations on SEO, content marketing
+            and advertising that can help you improve your online visibility in
+            days.
+          </p>
+        </div>
+      </section>
+
+      <!-- CEO Related Mark Up -->
+
+      <section class="ceo-wrapper flex">
+        <div>
+          <img
+            src="./assets/ceo-imgae/Mario_Leon_Rojas.webp"
+            alt="CEO and Founder"
+          />
+        </div>
+
+        <div>
+          <h3>Our CEO will eat his hat</h3>
+          <p>... if you find another tool that lets you do all these things</p>
+          <ul>
+            <li>Access over 20 billion keywords for 130 countries</li>
+            <li>Run in-depth website audit based on 130+ checks</li>
+            <li>
+              Get recommendations to improve your content to increase search
+              rankings
+            </li>
+            <li>
+              Track and analyze competitor websites and marketing strategies
+            </li>
+            <li>Create and track your PPC campaigns</li>
+            <li>Draft, schedule and post content on social</li>
+            <li>Create and schedule white-labeled or branded reports</li>
+          </ul>
+
+          <button class="button-essential">
+            Discover all Semrush features
+          </button>
+        </div>
+      </section>
+
+      <!-- Love Semrush Related Mark Up -->
+
+      <section class="love-semrush">
+        <h2>Here’s why marketers Semrush</h2>
+
+        <div id="select-market-lover" class="flex">
+          <p>Marketing suite</p>
+          <p>SEO</p>
+          <p>Content marketing</p>
+          <p>Market research</p>
+          <p>Advertising</p>
+          <p>Social media</p>
+        </div>
+
+        <div class="lover-semrush-wrapper">
+          <section class="control flex align-items-center">
+            <p>&#8592;</p>
+            <p>1/4</p>
+            <p>&#8594;</p>
+          </section>
+
+          <div class="marketing-suite">
+            <div>
+              <p class="quote">
+                “I've been using Semrush for 7+ years now and heavily rely on it
+                to help me move whatever site I'm working on to the top of
+                Google.”
+              </p>
+
+              <img
+                src="https://www.semrush.com/static/index/testimonials/Casey_Camilleri_Marx.335cc28f69cb.webp"
+                alt="Casey Casey Camilleri Marx"
+              />
+              <p class="name">Casey Camilleri Marx</p>
+              <p>Digital Marketing Director, Nlyte Software</p>
+            </div>
+
+            <div class="display-none">
+              <p class="quote">
+                “What I appreciate most about Semrush is that it covers all
+                areas of search with its tools, so I can have a 360-degree view
+                of my projects.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Esther_Gimenez.442e7b9c274a.jpg"
+                alt="Esther Gimenez"
+              />
+              <p class="name">Esther Giménez</p>
+              <p>Senior SEO & UX Consultant, Annalect, Omnicom Media Group</p>
+            </div>
+
+            <div class="display-none">
+              <p class="quote">
+                “If you ask an agency to deliver 10x organic search growth
+                through content, they will assign a large team to your project.
+                Our content team, in contrast, runs activities with Semrush
+                without having an army of people specialized in SEO.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Fabrizio_Ballarini.70ae6db20432.jpg"
+                alt="Fabrizio Ballarini"
+              />
+              <p class="name">Fabrizio Ballarini</p>
+              <p>Responsible for SEO, TransferWise</p>
+            </div>
+
+            <div class="display-none">
+              <p class="quote">
+                “When it comes to pure value, Semrush wins. That’s mostly
+                because you get a fully-featured SEO software suite AND Google
+                Ads software for the same monthly price.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Brian_Dean.380cb9f99628.jpg"
+                alt="Brian Dean"
+              />
+              <p class="name">Brian Dean</p>
+              <p>Founder, Backlinko</p>
+            </div>
+          </div>
+
+          <div class="seos-reviews display-none">
+            <div>
+              <p class="quote">
+                “We chose Semrush because the keyword tracking was much more
+                accurate than our previous tools and the interface was very
+                intuitive.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Freddy_Hunt.4fa7cc5df432.jpg"
+                alt="Freddy Hunt"
+              />
+              <p class="name">Freddy Hunt</p>
+              <p>Digital Marketing Director, Nlyte Software</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “There is a direct correlation between using Semrush, being
+                focused on SEO, and the sheer growth that we’ve had. Our organic
+                traffic was up by 230% in 2019. Literally every day we are
+                getting the highest traffic ever on our website.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Eric_Bogard.3e0c4ca3794f.jpg"
+                alt="Eric Bogard"
+              />
+              <p class="name">Eric Bogard</p>
+              <p>S VP of Marketing, Arkadium</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “With the help of Semrush, we empowered every single marketing
+                team within the university to double their traffic like we did
+                for the central sites.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Shefali_Joshi.59ac6aa23f32.jpg"
+                alt="Shefali Joshi"
+              />
+              <p class="name">Shefali Joshi</p>
+              <p>Marketing Optimization Analyst, Monash University</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “I’ve never seen a local dental practice in the world ranking as
+                much as we are now. We are ranking nationally. Because of the
+                tool. Simple as that. And I still don’t use even 50% of it.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Ed_Challinor.9a6b90c7c95c.jpg"
+                alt="Ed Challinor"
+              />
+              <p class="name">Ed Challinor</p>
+              <p>Co-founder and CEO, Smileworks</p>
+            </div>
+          </div>
+
+          <div class="content-marketing-reviews display-none">
+            <div>
+              <p class="quote">
+                “Our overall organic traffic increased sevenfold, with blog
+                traffic making up over 75% of the visits! Semrush allowed us to
+                optimize and run our content strategy without needing an army of
+                SEO experts.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Barbora_Jassova.cc110ec78bb6.jpg"
+                alt="Barbora Jassova"
+              />
+              <p class="name">Barbora Jassova</p>
+              <p>Content Strategist, Landbot</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “Semrush’s SEO Writing Assistant is one of a kind. I was amazed
+                by the feedback and recommendations it provided me to improve my
+                SEO, text readability, originality, and tone of voice.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Mesmer_Doue.e37eeaf6eb89.jpg"
+                alt="Mesmer Doue"
+              />
+              <p class="name">Mesmer Doue</p>
+              <p>Digital Marketing Consultant, Blue Lance</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “By using Semrush, my team saves a lot of time by working on the
+                right content and in a more data-driven way. Semrush is my right
+                hand for many tasks, it helps me and my team to strategize.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Idan_Segal.1d973e7e94c8.jpg"
+                alt="Idan Segal"
+              />
+              <p class="name">Idan Segal</p>
+              <p>Organic Growth Lead, Wix</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “We created a comprehensive content strategy to increase the
+                potential organic traffic by 123%. We actively used Semrush
+                tools in the process to achieve our goals.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Ilyas_Teker.5882a896a432.jpg"
+                alt="Ilyas Teker"
+              />
+              <p class="name">Ilyas Teker</p>
+              <p>Founder, SEO Consultant, Mosanta</p>
+            </div>
+          </div>
+
+          <div class="marketing-research-reviews display-none">
+            <div>
+              <p class="quote">
+                “When you are at the table with a general manager, they just
+                want to know the market share. Market Explorer is the perfect
+                tool to quickly show what our brand’s role and classification
+                inside the market are.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Emanuele_Arosio.6f67ca5a8abf.jpg"
+                alt="Emanuele Arosio"
+              />
+              <p class="name">Emanuele Arosio</p>
+              <p>Head of Global SEO, Triboo Group</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “My favorite part about Semrush is the power it has for
+                competitive intelligence. It makes it easier to make savvy
+                advertising decisions when you have more data.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Dignorah_Altamiranda.b11feb049b87.jpg"
+                alt="Dignorah Altamiranda"
+              />
+              <p class="name">Dignorah Altamiranda</p>
+              <p>Marketing Team Lead, Avature</p>
+            </div>
+
+            <div>
+              <p class="quote">
+                “I love the feature that lets you analyze the keyword and
+                backlink gap with your competitors. This is very useful in
+                determining which keywords you aren't ranking for, that you
+                could be getting.”
+              </p>
+
+              <img
+                src="https://cdn.semrush.com/static/index/testimonials/Paul_Meluzzo.0d031a702ea5.jpg"
+                alt="Paul Meluzzo"
+              />
+              <p class="name">Paul Meluzzo</p>
+              <p>Creative Director, Omnislash Visual</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-started">
+        <h2>Get started with Semrush today</h2>
+        <p>Get 7 days of full access to all toolkits. Cancel anytime.</p>
+        <button class="button-essential">Start your free trial</button>
+      </section>
+
+      <footer class="background-black">
+        <article class="contact-details flex">
+          <div id="footer-select-country">
+            <div class="flex align-items-center">
+              <p>United Stated</p>
+              <div class="arrow"></div>
+            </div>
+          </div>
+
+          <div>
+            <p>+1 (800) 815 - 9959</p>
+
+            <div class="network-status"></div>
+            online
+          </div>
+
+          <p>
+            10:00 AM - 6:00 PM (EST), Monday - Friday <br />
+            SEMrush Inc. 800 Boylston Street Suite 2475 <br />
+            Boston, MA 02199
+          </p>
+
+          <div>
+            <button class="button-essential" id="get-started-btn">
+              Get started with Semrush!
+            </button>
+            <a>or see our plans & pricing</a>
+          </div>
+        </article>
+
+        <article class="address flex justify-content-center">
+          <p>USA, 800 Boylston Street, Suite 2475, Boston, MA 02199</p>
+          <p>mail@semrush.com</p>
+        </article>
+
+        <article class="footer-feature flex">
+          <div class="flex">
+            <p>SEMRUSH</p>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+            <a href="#">Success Stories</a>
+            <a href="#">Stats and Facts</a>
+            <a href="#">Data Studies</a>
+            <a href="#">News</a>
+            <a href="#">Custom Report</a>
+          </div>
+
+          <div class="flex">
+            <p>HELP</p>
+            <a href="#">Knowledge Base</a>
+            <a href="#">Academy</a>
+            <a href="#">Semrush API</a>
+
+            <div class="flex" id="community-footer">
+              <p>COMMUNITY</p>
+              <a href="#">Semrush Blog</a>
+              <a href="#">Webinars</a>
+              <a href="#">Events</a>
+            </div>
+          </div>
+
+          <div class="flex">
+            <p>MORE TOOLS</p>
+            <a href="#">Analytics Reports</a>
+            <a href="#">Projects</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Agency Partners</a>
+            <a href="#">Affiliate Program</a>
+            <a href="#">SEOquake</a>
+            <a href="#">Sensors</a>
+            <a href="#">Amazon Tools</a>
+            <a href="#">Prowly</a>
+          </div>
+
+          <div class="flex">
+            <p>COMPANY</p>
+            <a href="#">About Us</a>
+            <a href="#">Partners</a>
+            <a href="#">Legal Info</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Security Info</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div class="flex">
+            <p>FOLLOW US</p>
+            <a href="https://">Twitter</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.youtube.com">Youtube</a>
+            <a href="https://www.pinterest.com">Pinterest</a>
+          </div>
+
+          <div class="flex">
+            <p>Language</p>
+            <a href="#">English</a>
+            <a href="#">Español</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Français</a>
+            <a href="#">Italiano</a>
+            <a href="#">Português (Brasil)</a>
+            <a href="#">Русский</a>
+            <a href="#">中文</a>
+            <a href="#">日本語</a>
+            <a href="#">Tiếng Việt</a>
+            <a href="#">한국어</a>
+          </div>
+        </article>
+
+        <article class="flex align-items-center">
+          <img src="./assets/svgs/svgexport-48.svg" alt="company logo" />
+          <p>© 2008 - 2021 Semrush. All rights reserved.</p>
+        </article>
+      </footer>
+    </main>
   </body>
 </html>

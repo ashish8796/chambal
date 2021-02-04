@@ -1,1 +1,50 @@
-/* reset */
+@import "./reset.css";
+@import "./font.css";
+@import "./pages/home.css";
+
+.background-black {
+  background-color: #111317;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction {
+  flex-direction: row;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.button-essential {
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  background: #fa633f;
+}
+
+.backgroun-white {
+  background-color: white;
+}
+
+/* 
+body {
+  color: b;
+} */
