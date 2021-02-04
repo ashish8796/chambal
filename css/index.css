@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-/* reset */
-
-@import "./pages/reset.css";
-
-=======
 @import "./reset.css";
 @import "./font.css";
 @import "./pages/home.css";
