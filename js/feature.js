@@ -63,7 +63,8 @@
         document.getElementById("item14").remove();
         document.getElementById("item15").remove();
         document.getElementById("item7").remove();
-        document.getElementById("item17").remove();
+        document.getElementById("item1").remove();
+        document.getElementById("item4").remove();
       }
 
       var btn = document.getElementById("serm");
