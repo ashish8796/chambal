@@ -1,6 +1,7 @@
 header {
   color: white;
   padding: 0 5vw;
+  position: relative;
 }
 
 header:hover {
@@ -10,12 +11,7 @@ header:hover {
 nav {
   padding: 10px 0;
   font-family: Inter, sans-serif;
-  position: relative;
   justify-content: space-between;
-}
-
-.left-navigation {
-  /* border: 1px solid yellow; */
 }
 
 .left-navigation > p:first-child {
@@ -24,7 +20,6 @@ nav {
 
 .right-navigation {
   justify-content: flex-end;
-  /* border: 1px solid green; */
 }
 
 nav a,
@@ -70,7 +65,7 @@ nav a,
 
 .position-absolute {
   position: absolute;
-  z-index: 100;
+  z-index: 200;
   background-color: #111317;
 }
 
@@ -115,4 +110,67 @@ nav a,
 #extra-tools-box {
   top: 30px;
   left: -4rem;
+}
+
+#menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu > div {
+    margin-top: 4px;
+  }
+
+  .right-navigation {
+    margin-top: -25px;
+    margin-left: 50vw;
+  }
+
+  #responsive-section {
+    display: none;
+    padding-top: 30px;
+    width: 100%;
+    background-color: #111317;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 200;
+    align-items: flex-start !important;
+  }
+
+  .left-navigation a,
+  .left-navigation > div {
+    width: 90vw;
+    margin: 10px 0 20px 50px;
+    padding: 0;
+  }
+
+  .logo {
+    display: none !important;
+  }
+
+  #resources-box {
+    width: 100.5vw;
+    padding: 40px 0;
+    gap: 30px;
+  }
+
+  #company-box,
+  #extra-tools-box {
+    width: 87.5vw;
+    left: -100px;
+  }
+
+  #resources-box a {
+    width: 30vw;
+  }
 }
