@@ -69,6 +69,23 @@
   height: auto;
   object-fit: contain;
 }
+@media only screen and (max-width: 768px) {
+  #id1{margin-bottom: 66px;   margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: initial; overflow: hidden;color: #333;
+    background: #fbfbfb;}
+
+    #id>div:nth-child(1) {font-size: 16px;     font-family: Ubuntu,sans-serif;
+      font-weight: 400;
+      color: #333; font-size: 22px;
+      line-height: 32px;
+      letter-spacing: -.2px; max-width: 335px;}
+
+
+}
 
 #vivekid0 {
   background-color: #111317;
