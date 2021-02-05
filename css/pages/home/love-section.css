@@ -13,15 +13,33 @@
   font-weight: bold;
 }
 
-#select-market-lover {
-}
-
-#select-market-lover p {
+#select-market-lover > div {
   padding: 13px 30px;
   font-size: 17px;
   border: 1px solid gray;
   border-radius: 23px;
   margin-right: 20px;
+  position: relative;
+}
+
+#select-market-lover > div:hover {
+  cursor: pointer;
+  border: 1px solid #463e83;
+}
+
+.lover-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  z-index: 10;
+}
+
+.selected-lover {
+  background-color: #463e83;
+  color: white;
 }
 
 .lover-semrush-wrapper {
@@ -52,10 +70,15 @@
   margin-top: 50px;
 }
 
+.control > p:first-child:hover,
+.control > p:last-child:hover {
+  cursor: pointer;
+}
+
 .marketing-suite {
 }
 
-.marketing-suite > div {
+.lover-semrush-wrapper > div {
   width: 80%;
   margin: auto;
 }
