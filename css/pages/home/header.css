@@ -10,10 +10,12 @@ header:hover {
 nav {
   padding: 10px 0;
   font-family: Inter, sans-serif;
+  position: relative;
+  justify-content: space-between;
 }
 
 .left-navigation {
-  flex-grow: 2;
+  /* border: 1px solid yellow; */
 }
 
 .left-navigation > p:first-child {
@@ -22,6 +24,7 @@ nav {
 
 .right-navigation {
   justify-content: flex-end;
+  /* border: 1px solid green; */
 }
 
 nav a,
@@ -32,6 +35,7 @@ nav a,
   color: #a1a6af;
   font-size: 14px;
   font-weight: 600;
+  position: relative;
 }
 
 .arrow {
@@ -62,4 +66,53 @@ nav a,
 
 #log-in-btn {
   background: none;
+}
+
+.position-absolute {
+  position: absolute;
+  z-index: 100;
+  background-color: #111317;
+}
+
+#resources-box {
+  top: 30px;
+  left: -5em;
+  width: 50vw;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 40px 60px;
+  gap: 30px;
+}
+
+#resources-box h4 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#resources-box div {
+  line-height: 20px;
+  font-weight: normal;
+}
+
+#company-box,
+#extra-tools-box {
+  display: none;
+  flex-direction: column;
+  top: 30px;
+  padding: 20px 80px;
+}
+
+#company-box a,
+#extra-tools-box a {
+  padding: 15px 0;
+  font-size: 20px;
+  color: white;
+  width: 170px;
+}
+
+#extra-tools-box {
+  top: 30px;
+  left: -4rem;
 }
