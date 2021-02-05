@@ -1,0 +1,63 @@
+@import "./../reset.css";
+#login-layout{
+    height: 85vh;
+    width: 80vw;
+    border: 1px solid black;
+    margin-left: 5vw;
+    display: flex;
+    margin-top: 10vh;
+}
+.login{
+   width: 35%;
+   height: 95%;
+   position: relative;
+   border: 1px solid red;
+
+}
+h1 + div{
+    height: 5vh;
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 2%;
+    background-color: rgb(150, 149, 140);
+}
+p{
+    margin-top:2%;
+    text-align: center;
+    font-size:15px;
+}
+.login>img{
+    height: 3vh;
+    width: 5vw;
+    float: left;
+    padding-left: 5%;
+    
+}
+#login-layout>div:nth-child(2){
+    height: 80%;
+    width: 40%;
+    margin-left: 20%;
+    border: 1px solid black;
+    margin-top: 5%;
+    
+}
+input,label,p + div{
+    height: 5vh;
+    width: 80%;
+    border-radius: 2px;
+    margin: 20px 5px;
+}
+input,p + div{
+    border: 1px solid black;
+    
+}
+input + p{
+    color: blue;
+    font-size: medium;
+    text-align: right;
+    margin-top: 1vh;
+}
+p + div{
+    background-color: blue;
+    color: burlywood;
+}
