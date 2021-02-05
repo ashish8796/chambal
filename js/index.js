@@ -3,6 +3,7 @@ const countrySelectBtn = document.getElementById("country-select-btn");
 const countryName = document.querySelector("#country-select-btn>p");
 const featureDiv = document.querySelector(".features-container");
 const featureInfoElem = document.querySelector(".img-container");
+const reviewsContainer = document.querySelector(".reviews");
 
 const countryObj = {
   "United States": "US",
@@ -213,3 +214,223 @@ function createFeatureInfo(key) {
 }
 
 featureDiv.addEventListener("click", changeFeature);
+
+const loverAreaObj = {
+  "marketing suite": [
+    "casey camilleri",
+    "Fabrizio Ballarini",
+    "Brian Dean",
+    "Esther Giménez",
+  ],
+  seo: ["Freddy Hunt", "Eric Bogard", "Shefali Joshi", "Ed Challinor"],
+  "content marketing": [
+    "Barbora Jassova",
+    "Mesmer Doue",
+    "Idan Segal",
+    "Ilyas Teker",
+  ],
+  "content marketing": [
+    "Barbora Jassova",
+    "Mesmer Doue",
+    "Idan Segal",
+    "Ilyas Teker",
+  ],
+};
+
+const loverObj = {
+  "marketing suite": {
+    "casey camilleri": {
+      quote: `“What I appreciate most about Semrush is that it covers all
+      areas of search with its tools, so I can have a 360-degree view
+      of my projects.”`,
+      src:
+        "https://www.semrush.com/static/index/testimonials/Casey_Camilleri_Marx.335cc28f69cb.webp",
+      post: "Senior SEO & UX Consultant, Annalect, Omnicom Media Group",
+    },
+    "Fabrizio Ballarini": {
+      quote: `“If you ask an agency to deliver 10x organic search growth
+      through content, they will assign a large team to your project.
+      Our content team, in contrast, runs activities with Semrush
+      without having an army of people specialized in SEO.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Fabrizio_Ballarini.70ae6db20432.jpg",
+      post: "Responsible for SEO, TransferWise",
+    },
+    "Brian Dean": {
+      quote: `“When it comes to pure value, Semrush wins. That’s mostly
+      because you get a fully-featured SEO software suite AND Google
+      Ads software for the same monthly price.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Brian_Dean.380cb9f99628.jpg",
+      post: "Founder, Backlinko",
+    },
+    "Esther Giménez": {
+      quote: `“What I appreciate most about Semrush is that it covers all
+      areas of search with its tools, so I can have a 360-degree view
+      of my projects.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Esther_Gimenez.442e7b9c274a.jpg",
+      post: "Senior SEO & UX Consultant, Annalect, Omnicom Media Group",
+    },
+  },
+
+  seo: {
+    "Freddy Hunt": {
+      quote: `“We chose Semrush because the keyword tracking was much more
+        accurate than our previous tools and the interface was very
+        intuitive.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Freddy_Hunt.4fa7cc5df432.jpg",
+      post: "Digital Marketing Director, Nlyte Software",
+    },
+    "Eric Bogard": {
+      quote: `“There is a direct correlation between using Semrush, being
+        focused on SEO, and the sheer growth that we’ve had. Our organic
+        traffic was up by 230% in 2019. Literally every day we are
+        getting the highest traffic ever on our website.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Eric_Bogard.3e0c4ca3794f.jpg",
+      post: "S VP of Marketing, Arkadium",
+    },
+    "Shefali Joshi": {
+      quote: `“With the help of Semrush, we empowered every single marketing
+        team within the university to double their traffic like we did
+        for the central sites.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Shefali_Joshi.59ac6aa23f32.jpg",
+      post: "Marketing Optimization Analyst, Monash University",
+    },
+    "Ed Challinor": {
+      quote: `“I’ve never seen a local dental practice in the world ranking as
+        much as we are now. We are ranking nationally. Because of the
+        tool. Simple as that. And I still don’t use even 50% of it.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Ed_Challinor.9a6b90c7c95c.jpg",
+      post: "Co-founder and CEO, Smileworks",
+    },
+  },
+
+  "content marketing": {
+    "Barbora Jassova": {
+      quote: ` “Our overall organic traffic increased sevenfold, with blog
+        traffic making up over 75% of the visits! Semrush allowed us to
+        optimize and run our content strategy without needing an army of
+        SEO experts.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Barbora_Jassova.cc110ec78bb6.jpg",
+      post: "Content Strategist, Landbot",
+    },
+    "Mesmer Doue": {
+      quote: ` “Semrush’s SEO Writing Assistant is one of a kind. I was amazed
+        by the feedback and recommendations it provided me to improve my
+        SEO, text readability, originality, and tone of voice.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Mesmer_Doue.e37eeaf6eb89.jpg",
+      post: "Digital Marketing Consultant, Blue Lance",
+    },
+    "Idan Segal": {
+      quote: `“By using Semrush, my team saves a lot of time by working on the
+        right content and in a more data-driven way. Semrush is my right
+        hand for many tasks, it helps me and my team to strategize.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Idan_Segal.1d973e7e94c8.jpg",
+      post: "Organic Growth Lead, Wix",
+    },
+    "Ilyas Teker": {
+      quote: `“We created a comprehensive content strategy to increase the
+        potential organic traffic by 123%. We actively used Semrush
+        tools in the process to achieve our goals.”`,
+      src:
+        "https://cdn.semrush.com/static/index/testimonials/Ilyas_Teker.5882a896a432.jpg",
+      post: "Founder, SEO Consultant, Mosanta",
+    },
+  },
+};
+
+let reviewsIndex = 0;
+let loverType = "marketing suite";
+
+const forwardReviewBtn = document.getElementById("increment-btn");
+const backwardBtn = document.getElementById("decrement-btn");
+
+function createMarketLover(loverType, index) {
+  reviewsContainer.innerHTML = "";
+  const obj = loverObj[loverType];
+
+  const loverArr = loverAreaObj[loverType];
+  backwardBtn.nextSibling.nextSibling.innerText = `${index + 1}/${
+    loverArr.length
+  }`;
+
+  const key = loverArr[index];
+
+  const reviewer = document.createElement("div");
+
+  const quote = document.createElement("p");
+  quote.classList.add("quote");
+  quote.textContent = obj[key].quote;
+
+  const reviewerImg = document.createElement("img");
+  reviewerImg.setAttribute("src", obj[key].src);
+  reviewerImg.setAttribute("alt", obj[key].name);
+
+  const name = document.createElement("p");
+  name.classList.add("name");
+
+  const firstName = key.split(" ")[0];
+  const lastName = key.split(" ")[1];
+  name.textContent =
+    firstName.charAt(0).toUpperCase() +
+    firstName.slice(1) +
+    " " +
+    lastName.charAt(0).toUpperCase() +
+    lastName.slice(1);
+
+  const position = document.createElement("p");
+  position.textContent = obj[key].post;
+
+  reviewer.append(quote);
+  reviewer.append(reviewerImg);
+  reviewer.append(name);
+  reviewer.append(position);
+
+  reviewsContainer.append(reviewer);
+}
+
+function forwardReviewer() {
+  if (reviewsIndex < 3) {
+    reviewsIndex += 1;
+    createMarketLover(loverType, reviewsIndex);
+  }
+}
+
+function backwardReviewer() {
+  if (reviewsIndex > 0) {
+    reviewsIndex -= 1;
+    createMarketLover(loverType, reviewsIndex);
+  }
+}
+
+forwardReviewBtn.addEventListener("click", forwardReviewer);
+backwardBtn.addEventListener("click", backwardReviewer);
+
+const selectLoverElem = document.getElementById("select-market-lover");
+let lastSelectedLoverType = document.querySelector(".selected-lover");
+
+selectLoverElem.addEventListener("click", (event) => {
+  const target = event.target;
+
+  if (target.className === "lover-cover") {
+    lastSelectedLoverType.classList.remove("selected-lover");
+    target.parentNode.classList.add("selected-lover");
+
+    lastSelectedLoverType = target.parentNode;
+    reviewsIndex = 0;
+
+    loverType = target.nextSibling.nextSibling.textContent.toLowerCase();
+
+    if (loverType in loverAreaObj) {
+      createMarketLover(loverType, reviewsIndex);
+    }
+  }
+});
