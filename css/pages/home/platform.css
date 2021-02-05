@@ -1,20 +1,18 @@
-/* background-color: #463e83 */
-/* Text-color: #fa633f */
-/* button-color: #fa633f */
-
 .platform {
   background-color: #463e83;
   color: white;
   font-family: "Open Sans", sans-serif;
-  padding: 13vh 12vw 0;
+  padding: 13vh 0 0;
   text-align: center;
   font-weight: 600;
   line-height: 70px;
   position: relative;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 53px;
+  max-width: 900px;
 }
 
 h1 span {
@@ -30,12 +28,13 @@ h1 + p {
 }
 
 .find-country-box {
-  width: 75%;
   margin: auto;
   margin-top: 50px;
+  position: relative;
 }
 
 .search-wrapper {
+  width: fit-content;
   background: white;
   line-height: normal;
   border-radius: 5px;
@@ -46,20 +45,9 @@ h1 + p {
 #search-country {
   color: black;
   background: white;
-  padding: 17px 0;
+  padding: 16px 0;
+  width: 450px;
 }
-
-/* #search-country:focus {
-  border: 3px solid blue;
-  border-right: none;
-} */
-/* 
-#search-country:focus + div {
-  border: 3px solid #463e83;
-  border-left: none;
-  border-top-left-radius: none;
-  border-bottom-left-radius: none;
-} */
 
 #search-country::placeholder {
   font-size: 16px;
@@ -83,8 +71,13 @@ h1 + p {
   margin: -8px 0 0 15px;
 }
 
+.find-country-box > div {
+  height: fit-content;
+}
+
 .platform #submit-btn {
-  padding: 0 60px;
+  width: 200px;
+  padding: 16px 0;
 }
 
 .platform > h5 {
@@ -95,7 +88,11 @@ h1 + p {
 
 .brands-svg-wrapper {
   justify-content: space-evenly;
-  width: 80vw;
+  width: 70vw;
+}
+
+.brands-svg-wrapper > img {
+  margin: 10px 20px;
 }
 
 .all-contries-cont {
@@ -104,13 +101,12 @@ h1 + p {
   overflow-y: scroll;
   position: absolute;
   z-index: 100;
-  left: 45%;
   background-color: white;
   color: black;
-  top: 65vh;
+  top: 80px;
   border-radius: 4px;
   right: 0;
-  height: 300px;
+  height: 300px !important;
   visibility: hidden;
 }
 
@@ -128,4 +124,32 @@ h1 + p {
 .all-contries-cont > div > p {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .find-country-box {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .search-wrapper {
+    width: 300px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .platform #submit-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .brands-svg-wrapper {
+    flex-wrap: wrap;
+  }
 }

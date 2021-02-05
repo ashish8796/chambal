@@ -78,3 +78,48 @@
   padding: 15px 50px;
   margin-top: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+  .ceo-wrapper {
+    flex-direction: row-reverse;
+    padding-right: 30px;
+  }
+
+  .ceo-wrapper img {
+    display: block;
+    margin: auto;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .award-section > div,
+  .semursh-view div {
+    flex-direction: column;
+  }
+
+  .semursh-view div {
+    width: 90%;
+
+    font-size: 16px;
+  }
+
+  .semursh-view h2 {
+    font-size: 30px;
+    line-height: normal;
+    width: 100%;
+  }
+
+  .ceo-wrapper {
+    flex-direction: column;
+  }
+
+  .ceo-wrapper h3 {
+    font-size: 30px;
+  }
+
+  .ceo-wrapper ul {
+    padding-left: 40px;
+    line-height: 25px;
+  }
+}

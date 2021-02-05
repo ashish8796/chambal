@@ -13,8 +13,21 @@
       <!-- Header Related Mark Up -->
       <header class="background-black">
         <nav class="flex">
-          <section class="left-navigation flex align-items-center">
+          <div id="menu">
             <a href="#" target="_blank" class="flex">
+              <img src="./assets/svgs/svgexport-48.svg" alt="company logo" />
+            </a>
+
+            <div class="flex">
+              <p>Menu</p>
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <section
+            class="left-navigation flex align-items-center"
+            id="responsive-section"
+          >
+            <a href="#" target="_blank" class="flex logo">
               <img src="./assets/svgs/svgexport-48.svg" alt="company logo" />
             </a>
 
@@ -140,7 +153,7 @@
 
       <!-- All Platform Container Related MarkUp -->
 
-      <section class="platform">
+      <section class="platform flex align-items-center">
         <h1>
           <span>One platform.</span> Everything you need to dominate your niche
           online.
@@ -150,12 +163,12 @@
           PPC and social media marketing from just one platform.
         </p>
 
-        <article class="find-country-box flex">
-          <div class="search-wrapper flex flex-grow">
+        <article class="find-country-box flex align-items-center">
+          <div class="search-wrapper flex">
             <input
               type="text"
               id="search-country"
-              class="button-essential backgroun-white flex-grow"
+              class="button-essential backgroun-whit"
               placeholder="Enter domain, keyword or URL"
             />
             <div
@@ -167,10 +180,12 @@
             </div>
           </div>
 
-          <button id="submit-btn" class="button-essential">Start now</button>
-        </article>
+          <div>
+            <button id="submit-btn" class="button-essential">Start now</button>
+          </div>
 
-        <div class="all-contries-cont"></div>
+          <div class="all-contries-cont"></div>
+        </article>
 
         <h5>Trusted by the world’s leading brands</h5>
 
@@ -211,6 +226,7 @@
 
       <section class="features-home-box">
         <h2 class="features-heading">See what's inside</h2>
+        <div class="feature-background"></div>
 
         <div class="features-container background-white">
           <article class="flex align-items-center">
@@ -329,10 +345,7 @@
           </div>
 
           <div class="flex-grow">
-            <img
-              src="./assets/award-image/marketing-professinals.png"
-              alt="Fortune 500"
-            />
+            <img src="./assets/award-image/fortune-500.png" alt="Fortune 500" />
 
             <h3>Fortune 500 <span>companies</span></h3>
             <p>use Semrush as their go-to marketing tool</p>

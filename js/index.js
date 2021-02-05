@@ -449,6 +449,7 @@ let isLastOptionVisible = false;
 
 function handleNavBarClick(event) {
   const target = event.target;
+  console.log(target);
 
   if (target.textContent === "Resources") {
     if (lastSelectedOption) {
@@ -456,6 +457,8 @@ function handleNavBarClick(event) {
     }
 
     const option = target.nextElementSibling.nextElementSibling;
+
+    console.log({ option });
 
     if (option === lastSelectedOption) {
       option.style.display = isLastOptionVisible ? "none" : "grid";
@@ -505,3 +508,27 @@ function handleNavBarClick(event) {
 }
 
 navElem.addEventListener("click", handleNavBarClick);
+
+// Header Responsive
+const menuElem = document.getElementById("menu");
+
+let isMenuVisible = false;
+
+menu.addEventListener("click", (event) => {
+  const target = event.target;
+
+  if (target.textContent === "Menu") {
+    isMenuVisible = !isMenuVisible;
+    menu.nextElementSibling.style.display = isMenuVisible ? "flex" : "none";
+  }
+});
+
+window.addEventListener("resize", (event) => {
+  if (window.innerWidth > 1025) {
+    document.querySelector("nav").children[1].style.display = "flex";
+  }
+  if (window.innerWidth < 1023) {
+    console.log(window.innerWidth);
+    document.querySelector("nav").children[1].style.display = "none";
+  }
+});
