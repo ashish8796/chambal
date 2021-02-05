@@ -40,6 +40,11 @@
   background: #fa633f;
 }
 
+.button-essential:hover {
+  cursor: pointer;
+  background: #ca4316;
+}
+
 .backgroun-white {
   background-color: white;
 }

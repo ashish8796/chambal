@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Home is mine</title>
+    <title>Semrush</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
@@ -178,6 +178,8 @@
           <button id="submit-btn" class="button-essential">Start now</button>
         </article>
 
+        <div class="all-contries-cont"></div>
+
         <h5>Trusted by the world’s leading brands</h5>
 
         <div class="brands-svg-wrapper flex">
@@ -219,79 +221,44 @@
         <h2 class="features-heading">See what's inside</h2>
 
         <div class="features-container background-white">
-          <article class="flex">
-            <div class="feature">
-              <img
-                src="./assets/svgs/svgexport-11.svg"
-                alt="seo img"
-                class="disablep-img"
-              />
+          <article class="flex align-items-center">
+            <div class="feature abled-img">
               <img
                 src="./assets/features-home-svgs/sec-abled.png"
-                alt=""
-                class="abled-img"
+                alt="seo img"
               />
-              <div id="seo"></div>
+
+              <div id="seo" data-id="0-true"></div>
               <p>SEO</p>
             </div>
 
             <div class="feature">
               <img
-                src="./assets/svgs/svgexport-12.svg"
-                alt="seo img"
-                class="disablep-img"
+                src="./assets/features-home-svgs/content-marketing-disabled.png"
+                alt="content market img"
               />
-              <img
-                src="./assets/features-home-svgs/content-marketing-abled.png"
-                alt=""
-                class="abled-img"
-              />
-              <div id="content-marketing"></div>
+
+              <div id="content-marketing" data-id="1-false"></div>
               <p>CONTENT MARKETING</p>
             </div>
 
             <div class="feature">
               <img
-                src="./assets/svgs/svgexport-13.svg"
-                alt="seo img"
-                class="disablep-img"
+                src="./assets/features-home-svgs/market-research-disabled.png"
+                alt="market research img"
               />
-              <img
-                src="./assets/features-home-svgs/market-research-abled.png"
-                alt=""
-                class="abled-img"
-              />
-              <div id="market-research"></div>
+
+              <div id="market-research" data-id="2-false"></div>
               <p>MARKET RESEARCH</p>
             </div>
 
             <div class="feature">
               <img
-                src="./assets/svgs/svgexport-14.svg"
+                src="./assets/features-home-svgs/social-media-disabled.png"
                 alt="seo img"
-                class="disablep-img"
               />
-              <img
-                src="./assets/features-home-svgs/advertising-abled.png"
-                alt=""
-                class="abled-img"
-              />
-              <div id="advertising"></div>
-              <p>ADVERTISING</p>
-            </div>
 
-            <div class="feature">
-              <img
-                src="./assets/svgs/svgexport-15.svg"
-                alt="seo img"
-                class="disablep-img"
-              />
-              <img
-                src="./assets/features-home-svgs/social-media-abled.png"
-                alt=""
-                class="abled-img"
-              />
-              <div id="social-media"></div>
+              <div id="social-media" data-id="3-false"></div>
               <p>SOCIAL MEDIA</p>
             </div>
           </article>
@@ -318,107 +285,6 @@
                 src="https://cdn.semrush.com/static/index/tools-new/seo.9edeeb0311e7.svg"
                 alt="seo img"
               />
-            </section>
-          </article>
-
-          <article id="content-marketing-info" class="display-none">
-            <section>
-              <img
-                src="https://cdn.semrush.com/static/index/tools-new/content_marketing.9ad3130035b8.svg"
-                alt="content marketing img"
-              />
-            </section>
-
-            <section>
-              <h3>Create content that ranks (no expert knowledge required)</h3>
-
-              <ul>
-                <li>Find topics that resonate with your audience</li>
-                <li>Get actionable tips to create SEO-friendly content</li>
-                <li>
-                  Audit and improve your content based on real-time metrics
-                </li>
-                <li>Track brand mentions and content reach</li>
-              </ul>
-
-              <button>Try Content Marketing Toolkit</button>
-            </section>
-          </article>
-
-          <article id="market-research-info" class="display-none">
-            <section>
-              <img
-                src="https://cdn.semrush.com/static/index/tools-new/competitive_research.122052b6bfb5.svg"
-                alt="market research img"
-              />
-            </section>
-
-            <section>
-              <h3>Unveil your competitors’ marketing strategy and tactics</h3>
-
-              <ul>
-                <li>Analyze traffic of any website</li>
-                <li>Unveil competitor promotion strategies</li>
-                <li>Get ideas for growing your market share</li>
-                <li>Discover keyword & backlink gap</li>
-              </ul>
-
-              <button>
-                <span class="index-button__text">
-                  Try Competitive Research Toolkit
-                </span>
-              </button>
-            </section>
-          </article>
-
-          <article id="advertising-info" class="display-none">
-            <section>
-              <img
-                src="https://cdn.semrush.com/static/index/tools-new/ppc.fedd11a67df9.svg"
-                alt="advertising img"
-              />
-            </section>
-
-            <section>
-              <h3>Discover how to reach more prospects while spending less</h3>
-
-              <ul>
-                <li>Find the best keywords for every PPC campaign</li>
-                <li>Monitor your competitor’s ad copies and landing pages</li>
-                <li>Optimize your Advertising spend (at a local level)</li>
-                <li>Analyze Google Shopping ad campaigns</li>
-              </ul>
-
-              <button>
-                <span class="index-button__text">
-                  Try Competitive Research Toolkit
-                </span>
-              </button>
-            </section>
-          </article>
-
-          <article id="social-media-info" class="display-none">
-            <section>
-              <img
-                src="https://cdn.semrush.com/static/index/tools-new/social_media.044a788fef8f.svg"
-                alt="social media img"
-              />
-            </section>
-            <section>
-              <h3>Build your most effective social media strategy</h3>
-
-              <ul>
-                <li>Schedule and post content on social media</li>
-                <li>Analyze the performance of your posts</li>
-                <li>Track & analyze competitor accounts</li>
-                <li>Create & optimize social ads</li>
-              </ul>
-
-              <button>
-                <span class="index-button__text">
-                  Try Social Media Toolkit
-                </span>
-              </button>
             </section>
           </article>
         </div>
@@ -924,6 +790,7 @@
         </article>
       </footer>
     </main>
-    >>>>>>> 7c3667209ec869858aa36a3792d318689b605cc2
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

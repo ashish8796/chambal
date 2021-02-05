@@ -36,8 +36,8 @@ nav a,
 
 .arrow {
   border: 1px solid #a1a6af;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
+  border-top: 1px solid #111317;
+  border-left: 1px solid #111317;
   width: 8px;
   height: 8px;
   transform: rotate(45deg);
@@ -58,4 +58,8 @@ nav a,
   background-color: #3dbc98;
   padding: 7px 10px;
   border: none;
+}
+
+#log-in-btn {
+  background: none;
 }
