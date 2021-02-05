@@ -1,9 +1,14 @@
+.feature-background {
+  background-color: #463e83;
+  height: 80vh;
+}
+
 .features-home-box {
   background-color: #463e83;
   text-align: center;
   font-family: "Inter", sans-serif;
   position: relative;
-  padding-bottom: 90vh;
+  width: 100%;
 }
 
 .features-heading {
@@ -14,20 +19,25 @@
 }
 
 .features-container {
+  width: 90vw;
   background-color: white;
   border-radius: 20px;
-  width: 80vw;
-  padding: 50px 50px 20px;
   box-shadow: 0 0 15px 3px #45567380;
+  margin: auto;
   position: absolute;
-  top: 28vh;
+  top: 30vh;
+  margin: auto;
   left: 50%;
   transform: translate(-50%);
 }
 
+.features-container > article {
+  padding: 0 50px;
+}
+
 .feature {
   width: 180px;
-  padding: 16px 0 20px;
+  padding: 20px 0;
   flex-grow: 1;
   position: relative;
 }
@@ -50,19 +60,22 @@
 .img-container {
   justify-content: space-between;
   text-align: left;
-  padding-top: 4em;
+  padding: 4em 0 2em;
   margin: auto;
 }
 
 .img-container h3 {
   font-size: 33px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 40px;
 }
 
 .img-container > section:first-child {
-  flex-basis: 42%;
   margin-top: 30px;
+}
+
+.img-container h3 {
+  max-width: 500px;
 }
 
 .img-container ul {
@@ -88,4 +101,14 @@
   position: absolute;
   top: 0;
   z-index: 10;
+}
+
+@media screen and (max-width: 1025px) {
+  .img-container {
+    flex-direction: column-reverse;
+  }
+
+  .features-container {
+    padding-bottom: 5vh;
+  }
 }

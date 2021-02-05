@@ -120,3 +120,23 @@ footer img + p {
   margin-left: 3vw;
   color: rgb(137, 141, 154);
 }
+
+@media screen and (max-width: 1024px) {
+  .contact-details {
+    display: grid !important;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 30px;
+  }
+
+  .contact-details > div,
+  .contact-details > p {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-details {
+    grid-template-columns: 30vw 30vw;
+  }
+}

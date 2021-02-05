@@ -33,3 +33,26 @@
 .quote-cont > div > p:last-child {
   color: gray;
 }
+
+@media screen and (max-width: 1025px) {
+  .quote-cont {
+    margin-top: 90vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quote-cont h2,
+  .award-section h2 {
+    font-size: 30px;
+  }
+
+  .quote-cont {
+    margin-top: 110vh;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
+  .quote-cont {
+    margin-top: 100vh;
+  }
+} */
