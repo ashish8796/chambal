@@ -5,6 +5,7 @@ const featureDiv = document.querySelector(".features-container");
 const featureInfoElem = document.querySelector(".img-container");
 const reviewsContainer = document.querySelector(".reviews");
 
+// Functionality for Selecting Country in Platform section
 const countryObj = {
   "United States": "US",
   "United Kingdom": "UK",
@@ -61,6 +62,8 @@ allCountriesDiv.addEventListener("click", function (event) {
   }
 });
 
+// Functionaly for Changing Feature at Feature section
+
 const abledImgSrcArr = [
   "./assets/features-home-svgs/sec-abled.png",
   "./assets/features-home-svgs/content-marketing-abled.png",
@@ -114,6 +117,8 @@ function changeFeature(event) {
   lastSelectedImg = target.parentNode.children[0];
   lastIndex = imgNo;
 }
+
+// Functionaly for Changing Market Lover At Market Semrush Lover Section
 
 const featureInfoSrcArr = [
   ,
@@ -434,3 +439,69 @@ selectLoverElem.addEventListener("click", (event) => {
     }
   }
 });
+
+// Fuctionality For Navigation at header
+const navElem = document.querySelector("nav");
+
+let lastSelectedOption;
+
+let isLastOptionVisible = false;
+
+function handleNavBarClick(event) {
+  const target = event.target;
+
+  if (target.textContent === "Resources") {
+    if (lastSelectedOption) {
+      lastSelectedOption.style.display = "none";
+    }
+
+    const option = target.nextElementSibling.nextElementSibling;
+
+    if (option === lastSelectedOption) {
+      option.style.display = isLastOptionVisible ? "none" : "grid";
+      isLastOptionVisible = !isLastOptionVisible;
+    } else {
+      option.style.display = "grid";
+      isLastOptionVisible = true;
+    }
+
+    lastSelectedOption = option;
+  }
+
+  if (target.textContent === "Company") {
+    if (lastSelectedOption) {
+      lastSelectedOption.style.display = "none";
+    }
+
+    const option = target.nextElementSibling.nextElementSibling;
+
+    if (option === lastSelectedOption) {
+      option.style.display = isLastOptionVisible ? "none" : "grid";
+      isLastOptionVisible = !isLastOptionVisible;
+    } else {
+      option.style.display = "grid";
+      isLastOptionVisible = true;
+    }
+
+    lastSelectedOption = option;
+  }
+
+  if (target.textContent === "Extra Tools") {
+    if (lastSelectedOption) {
+      lastSelectedOption.style.display = "none";
+    }
+    const option = target.nextElementSibling.nextElementSibling;
+
+    if (option === lastSelectedOption) {
+      option.style.display = isLastOptionVisible ? "none" : "grid";
+      isLastOptionVisible = !isLastOptionVisible;
+    } else {
+      option.style.display = "grid";
+      isLastOptionVisible = true;
+    }
+
+    lastSelectedOption = option;
+  }
+}
+
+navElem.addEventListener("click", handleNavBarClick);
