@@ -32,17 +32,17 @@
   position: relative;
 }
 
+.feature img {
+  width: 80px;
+  height: 80px;
+}
+
 .feature p {
   font-size: 18px;
   margin: 25px 0 0;
 }
 
-.disabled-img {
-  color: gray;
-}
-
 .abled-img {
-  display: none;
   color: #463e83;
   border-bottom: 5px solid #463e83;
 }
@@ -84,7 +84,6 @@
 #advertising,
 #social-media {
   width: 100%;
-  border: 1px solid red;
   height: 100%;
   position: absolute;
   top: 0;
