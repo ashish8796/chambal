@@ -1,12 +1,45 @@
-/* reset */
-<<<<<<< HEAD
-@import "./pages/feature.css";
+@import "./reset.css";
+@import "./font.css";
+@import "./pages/home.css";
 
-body {
-  color: b;
+.background-black {
+  background-color: #111317;
 }
-=======
 
-@import "./pages/reset.css";
+.flex {
+  display: flex;
+}
 
->>>>>>> 45955ae6c49657296e7012bfd7d251ecc49b50b1
+.flex-direction {
+  flex-direction: row;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.button-essential {
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  background: #fa633f;
+}
+
+.backgroun-white {
+  background-color: white;
+}

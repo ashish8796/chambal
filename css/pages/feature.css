@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-body {
-  border: 2px solid red;
-=======
 #id1 {
   border: 0px dashed red;
   background-color: #edf2f5;
@@ -1095,5 +1091,4 @@ body {
   border: 0px black;
   height: 20vh;
   border: 0px dashed black;
->>>>>>> 45955ae6c49657296e7012bfd7d251ecc49b50b1
 }
