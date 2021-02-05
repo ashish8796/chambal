@@ -213,7 +213,7 @@
 }
 
 #all {
-  border: 1px dashed red;
+  border: 0px dashed red;
   display: grid;
   grid-template:
     "a b c"
