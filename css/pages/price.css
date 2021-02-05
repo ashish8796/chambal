@@ -1,0 +1,163 @@
+
+#nav,#price_middle{
+    text-align: center;
+    height:auto;
+    width: auto;
+    border: 1px solid red;
+    background-color:rgb(225, 228, 241)
+}
+h1 + div{
+    display: flex;
+    height: 8vh;
+    width: 20vw;
+    border: 1px solid black;
+    margin: auto;
+}
+h1 + div>div{
+    flex-basis: 1;
+    flex-grow: 1;
+    padding: 5px;
+    background-color: white;
+    
+}
+h1 + div>div:nth-child(1){
+    border-right: 1px solid black;
+}
+.save{
+    height: 50%;
+    width: 100%;
+    
+    text-align:left;
+    color: blue;
+    margin-right: 12px;
+    border-radius: 12px;
+    background-color: rgb(124, 124, 231);
+    
+}
+#pricing,#drop-d{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+#nav-lower{
+    height: 120px;
+    
+    width: 90%;
+    margin: auto;
+    background-color:rgb(117, 117, 235);
+    text-align: left;
+}
+#nav-lower>p{
+    padding-left: 10%;
+}
+#nav-lower>p:nth-of-type(1){
+    font-size: 30px;
+}
+#pricing>div,.left>div{
+   border: 1px solid red;
+   width: 25%;
+   flex-grow: 1.5;
+   text-align: left;
+   padding-left: 2%;
+    padding-right: 8%;
+
+}
+.blue{
+    color: blue;
+}
+.dollar{
+    display: flex;
+    width: 60%;
+    border: 1px solid black;
+}
+
+.dollar>div:nth-child(2){
+    text-align: left;
+}
+#try{
+    height: 4vh;
+    width: 30%;
+    
+    border-radius: 8px;
+    margin-top: 2vh;
+    color: white;
+    background-color: green;
+    text-align: center;
+}
+.blue{
+    color: blueviolet;
+}
+.left{
+    height: auto;
+    width: 35%;
+    border: 1px solid black;
+    display: flex;
+    margin-left: 50%;
+    
+}
+.left>div>#try{
+    width: 90%;
+}
+.left>div>.dollar{
+    width: 90%;
+}
+#price_middle{
+    background-color: white;
+}
+#drop-d{
+    display: grid;
+    margin-top: 5vh;
+    background-color:rgb(225, 228, 241);  
+    text-align: left;
+}
+#drop-d>div>p{
+    height: 3vh;
+    background-color:rgb(225, 228, 241);
+    grid-row-gap: -1px;
+    flex-flow: row;
+}
+#price_lower{
+    text-align: center;
+    height:auto;
+    width: 90%;
+    border: 1px solid red;
+    background-color:rgb(225, 228, 241);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#price_lower>div{
+   text-align:left;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+#price_lower>div:nth-of-type(1){
+    flex-grow: 1; 
+    background-color:rgb(225, 228, 241);   
+}
+.none{
+    display: none;
+}
+#price_lower>div>p{
+    height: 5vh;
+    
+    grid-row-gap: -1px;
+    flex-flow: row;
+}
+#price_lower>div:nth-of-type(2){
+    text-align: center;
+    background-color: white;
+}
+#drop-d>div>p:nth-of-type(2n),#price_lower>div>p:nth-of-type(2n){
+    height: 0.25vh;
+    width: 100%;
+    background-color: white;
+}
+#faq{
+    height: 40px;
+    width: auto;
+    text-align: center;
+    background-color: rgb(225, 228, 241);
+
+}
