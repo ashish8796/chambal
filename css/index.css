@@ -1,6 +1,3 @@
-
-
-
 @import "./reset.css";
 @import "./font.css";
 @import "./pages/home.css";
@@ -51,4 +48,3 @@
 .backgroun-white {
   background-color: white;
 }
-
