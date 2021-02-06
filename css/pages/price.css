@@ -123,16 +123,12 @@ h1 + div > div:nth-child(1) {
 }
 #price_lower > div {
   text-align: left;
-  
-  
-  
-  
 }
 
-
-#faq {
+#faq{
   text-align: center;
 }
+
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
