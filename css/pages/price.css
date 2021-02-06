@@ -92,6 +92,7 @@ h1 + div > div:nth-child(1) {
   width: 90%;
   margin: auto;
   background-color: white;
+  margin-top: 10px;
 }
 #nav-lower {
   height: 120px;
