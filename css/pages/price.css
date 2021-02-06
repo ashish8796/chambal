@@ -57,7 +57,7 @@ body {
   text-align: center;
   height: auto;
   width: auto;
-  border: 1px solid red;
+
   background-color: rgb(225, 228, 241);
 }
 h1 + div {
@@ -109,7 +109,6 @@ h1 + div > div:nth-child(1) {
 }
 #pricing > div,
 .left > div {
-  border: 1px solid red;
   width: 25%;
   flex-grow: 1.5;
   text-align: left;
@@ -122,7 +121,6 @@ h1 + div > div:nth-child(1) {
 .dollar {
   display: flex;
   width: 60%;
-  border: 1px solid black;
 }
 
 .dollar > div:nth-child(2) {
@@ -144,7 +142,6 @@ h1 + div > div:nth-child(1) {
 .left {
   height: auto;
   width: 35%;
-  border: 1px solid black;
   display: flex;
   margin-left: 50%;
 }
@@ -170,10 +167,9 @@ h1 + div > div:nth-child(1) {
   flex-flow: row;
 }
 #price_lower {
+  width: 90vw;
   text-align: center;
   height: auto;
-  width: 90%;
-  border: 1px solid red;
   background-color: rgb(225, 228, 241);
   margin: auto;
   display: flex;
@@ -181,8 +177,20 @@ h1 + div > div:nth-child(1) {
 }
 #price_lower > div {
   text-align: left;
-  border: 1px solid black;
   flex-grow: 1;
+}
+
+#faq {
+  text-align: center;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
 }
 #price_lower > div:nth-of-type(1) {
   flex-grow: 1;
@@ -201,15 +209,52 @@ h1 + div > div:nth-child(1) {
   text-align: center;
   background-color: white;
 }
+
+.text1 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 30vh;
+}
+.text1 > div {
+  text-align: left;
+  padding-left: 20px;
+}
+
+span {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
 #drop-d > div > p:nth-of-type(2n),
 #price_lower > div > p:nth-of-type(2n) {
   height: 0.25vh;
   width: 100%;
   background-color: white;
 }
+
 #faq {
   height: 40px;
   width: auto;
   text-align: center;
   background-color: rgb(225, 228, 241);
+}
+
+#buy {
+  height: 4vh;
+  width: 10vw;
+  border: 0.1px solid black;
+  background-color: rgb(236, 237, 241);
+  text-align: center;
+}
+#drop-d > div .content {
+  background-color: white;
+}
+.red {
+  color: red;
+}
+h5 {
+  font-weight: bold;
 }
