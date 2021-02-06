@@ -30,8 +30,8 @@
       function function3() {
         document.getElementById("item2").remove();
         document.getElementById("item5").remove();
-        document.getElementById("item12").remove();
-        document.getElementById("item13").remove();
+        document.getElementById("item1").remove();
+        document.getElementById("item3").remove();
         document.getElementById("item14").remove();
         document.getElementById("item15").remove();
         document.getElementById("item7").remove();
@@ -57,10 +57,10 @@
 
       function function5() {
         document.getElementById("item2").remove();
+        document.getElementById("item1").remove();
+        document.getElementById("item3").remove();
         document.getElementById("item5").remove();
-        document.getElementById("item12").remove();
-        document.getElementById("item13").remove();
-        document.getElementById("item14").remove();
+        document.getElementById("item7").remove();
         document.getElementById("item15").remove();
         document.getElementById("item7").remove();
         document.getElementById("item1").remove();
