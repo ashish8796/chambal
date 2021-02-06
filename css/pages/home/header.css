@@ -1,6 +1,7 @@
 header {
   color: white;
   padding: 0 5vw;
+  position: relative;
 }
 
 header:hover {
@@ -10,10 +11,7 @@ header:hover {
 nav {
   padding: 10px 0;
   font-family: Inter, sans-serif;
-}
-
-.left-navigation {
-  flex-grow: 2;
+  justify-content: space-between;
 }
 
 .left-navigation > p:first-child {
@@ -32,12 +30,13 @@ nav a,
   color: #a1a6af;
   font-size: 14px;
   font-weight: 600;
+  position: relative;
 }
 
 .arrow {
   border: 1px solid #a1a6af;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
+  border-top: 1px solid #111317;
+  border-left: 1px solid #111317;
   width: 8px;
   height: 8px;
   transform: rotate(45deg);
@@ -58,4 +57,120 @@ nav a,
   background-color: #3dbc98;
   padding: 7px 10px;
   border: none;
+}
+
+#log-in-btn {
+  background: none;
+}
+
+.position-absolute {
+  position: absolute;
+  z-index: 200;
+  background-color: #111317;
+}
+
+#resources-box {
+  top: 30px;
+  left: -5em;
+  width: 50vw;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 40px 60px;
+  gap: 30px;
+}
+
+#resources-box h4 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#resources-box div {
+  line-height: 20px;
+  font-weight: normal;
+}
+
+#company-box,
+#extra-tools-box {
+  display: none;
+  flex-direction: column;
+  top: 32px;
+  padding: 20px 80px;
+}
+
+#company-box a,
+#extra-tools-box a {
+  padding: 15px 0;
+  font-size: 20px;
+  color: white;
+  width: 170px;
+}
+
+#extra-tools-box {
+  top: 30px;
+  left: -4rem;
+}
+
+#menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu > div {
+    margin-top: 4px;
+  }
+
+  .right-navigation {
+    margin-top: -25px;
+    margin-left: 50vw;
+  }
+
+  #responsive-section {
+    display: none;
+    padding-top: 30px;
+    width: 100%;
+    background-color: #111317;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 200;
+    align-items: flex-start !important;
+  }
+
+  .left-navigation a,
+  .left-navigation > div {
+    width: 90vw;
+    margin: 10px 0 20px 50px;
+    padding: 0;
+  }
+
+  .logo {
+    display: none !important;
+  }
+
+  #resources-box {
+    width: 100.5vw;
+    padding: 40px 0;
+    gap: 30px;
+  }
+
+  #company-box,
+  #extra-tools-box {
+    width: 87.5vw;
+    left: -100px;
+  }
+
+  #resources-box a {
+    width: 30vw;
+  }
 }

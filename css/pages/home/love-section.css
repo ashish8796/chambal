@@ -1,7 +1,7 @@
 .love-semrush,
 .get-started {
   font-family: "Factor A", sans-serif;
-  margin: 20vh;
+  margin: 20vh 0;
   text-align: center;
 }
 
@@ -14,17 +14,42 @@
 }
 
 #select-market-lover {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#select-market-lover p {
+#select-market-lover > div {
   padding: 13px 30px;
   font-size: 17px;
   border: 1px solid gray;
   border-radius: 23px;
-  margin-right: 20px;
+  margin: 10px;
+  position: relative;
+}
+
+#select-market-lover > div:hover {
+  cursor: pointer;
+  border: 1px solid #463e83;
+}
+
+.lover-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  z-index: 10;
+}
+
+.selected-lover {
+  background-color: #463e83;
+  color: white;
 }
 
 .lover-semrush-wrapper {
+  width: 1100px;
+  margin: auto;
   background-color: #c9ecfd;
   border-radius: 20px;
   margin-top: 50px;
@@ -52,11 +77,13 @@
   margin-top: 50px;
 }
 
-.marketing-suite {
+.control > p:first-child:hover,
+.control > p:last-child:hover {
+  cursor: pointer;
 }
 
-.marketing-suite > div {
-  width: 80%;
+.lover-semrush-wrapper > div {
+  padding: 0 50px;
   margin: auto;
 }
 
@@ -96,7 +123,73 @@
 }
 
 .get-started button {
-  width: 25vw;
+  width: 350px;
   margin: 30px 0;
-  padding: 13px 60px;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .lover-semrush-wrapper {
+    width: 800px;
+  }
+
+  .quote {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lover-semrush-wrapper {
+    width: 632px;
+  }
+
+  .get-started h2 {
+    font-size: 35px;
+  }
+
+  .quote {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #select-market-lover > div {
+    padding: 10px;
+  }
+
+  .lover-semrush-wrapper {
+    width: 80vw;
+  }
+
+  .love-semrush h2,
+  .get-started h2 {
+    font-size: 35px;
+  }
+
+  .quote {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .get-started button {
+    margin: 20px 0;
+    padding: 15px 0;
+  }
+
+  .get-started p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .love-semrush h2,
+  .get-started h2 {
+    font-size: 30px;
+  }
+
+  .quote {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }

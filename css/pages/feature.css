@@ -1,3 +1,57 @@
+@import "./home/header.css";
+@import "./home/footer.css";
+
+body {
+  margin: 0;
+}
+
+.background-black {
+  background-color: #111317;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction {
+  flex-direction: row;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.button-essential {
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  background: #fa633f;
+}
+
+.button-essential:hover {
+  cursor: pointer;
+  background: #ca4316;
+}
+
+.backgroun-white {
+  background-color: white;
+}
+
 #id1 {
   border: 0px dashed red;
   background-color: #edf2f5;
@@ -58,7 +112,7 @@
 
 #id1 > div:nth-child(2) {
   margin-left: 30vw;
-  width: 25vw;
+  width: 35vw;
   margin-top: 1vh;
 }
 
@@ -68,6 +122,31 @@
   width: auto;
   height: auto;
   object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+  #id1 {
+    margin-bottom: 66px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: initial;
+    overflow: hidden;
+    color: #333;
+    background: #fbfbfb;
+  }
+
+  #id > div:nth-child(1) {
+    font-size: 16px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    max-width: 335px;
+  }
 }
 
 #vivekid0 {
@@ -196,7 +275,7 @@
 }
 
 #all {
-  border: 1px dashed red;
+  border: 0px dashed red;
   display: grid;
   grid-template:
     "a b c"

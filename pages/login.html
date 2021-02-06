@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup page</title>
+    <link rel="stylesheet" href="./../css/pages/login.css">
+   
+</head>
+<body>
+   <div id="login-layout">
+       <div class="login">
+           <h1>Create your account</h1>
+           <div>
+               
+            
+            <p>Continue with Google</p></div>
+            <hr/>
+            <form action="">
+                <label for="">Email</label><br>
+                <input type="text">
+                <label for="">Password</label><br>
+                <input type="text">
+                <p>forgot your Password ?</p>
+                <div><p>Log in</p></div>
+                <p>Don't have a Semrush acccount? Sign up</p>
+            </form>
+       </div>
+       <div class="right">
+           <img src="https://www.semrush.com/static/images/man-telescope.92c3a5643713ad8927bab3754d17990e.svg" alt="">
+       </div>
+   </div>
+
+    <script>
+        var btn=document.querySelector("input")
+        function border_color(){
+            var b=document.querySelector("input")
+            var color="blue"
+            b.style.borderColor=color
+        }
+            btn.addEventListener("click",border_color)
+    </script>
+</body>
+</html>
