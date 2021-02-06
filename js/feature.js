@@ -10,8 +10,8 @@
         document.getElementById("item8").remove();
       }
 
-      var btn = document.getElementById("seo");
-      btn.addEventListener("click", function1);
+      var btnn = document.getElementById("seo");
+      btnn.addEventListener("click", function1);
 
       function function2() {
         document.getElementById("item2").remove();
@@ -24,8 +24,8 @@
         document.getElementById("item8").remove();
       }
 
-      var btn = document.getElementById("content");
-      btn.addEventListener("click", function2);
+      var btnn = document.getElementById("content");
+      btnn.addEventListener("click", function2);
 
       function function3() {
         document.getElementById("item2").remove();
@@ -38,8 +38,8 @@
         document.getElementById("item8").remove();
       }
 
-      var btn = document.getElementById("mr");
-      btn.addEventListener("click", function3);
+      var btnn = document.getElementById("mr");
+      btnn.addEventListener("click", function3);
 
       function function4() {
         document.getElementById("item2").remove();
@@ -52,8 +52,8 @@
         document.getElementById("item17").remove();
       }
 
-      var btn = document.getElementById("ad");
-      btn.addEventListener("click", function4);
+      var btnn = document.getElementById("ad");
+      btnn.addEventListener("click", function4);
 
       function function5() {
         document.getElementById("item2").remove();
@@ -67,6 +67,6 @@
         document.getElementById("item4").remove();
       }
 
-      var btn = document.getElementById("serm");
-      btn.addEventListener("click", function5);
+      var btnn = document.getElementById("serm");
+      btnn.addEventListener("click", function5);
    
