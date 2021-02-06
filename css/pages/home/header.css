@@ -4,6 +4,10 @@ header {
   position: relative;
 }
 
+header span {
+  color: #a1a6af;
+}
+
 header:hover {
   cursor: pointer;
 }
@@ -33,7 +37,8 @@ nav a,
   position: relative;
 }
 
-.arrow {
+header .arrow,
+.platform .arrow {
   border: 1px solid #a1a6af;
   border-top: 1px solid #111317;
   border-left: 1px solid #111317;
