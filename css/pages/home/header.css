@@ -37,7 +37,8 @@ nav a,
   position: relative;
 }
 
-header .arrow {
+header .arrow,
+.platform .arrow {
   border: 1px solid #a1a6af;
   border-top: 1px solid #111317;
   border-left: 1px solid #111317;
