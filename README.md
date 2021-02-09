@@ -1,4 +1,4 @@
-Collabrated Project
+This is a collabrated Project.
 
 Click here to see the project : https://ashish8796.github.io/chambal/
 
